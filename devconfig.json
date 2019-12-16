@@ -1,0 +1,15 @@
+{
+  "NODE_APP_PORT": 60000,
+  "HISTORY_BASE_URL": "https://baike.baidu.com/cms/home/eventsOnHistory",
+  "LOCATION_BASE_URL": "https://restapi.amap.com/v3/ip?key=310359e01e36ef692bf27c4311109d9f&ip=",
+  "QUOTE_FILE_NAME": "quotes.json",
+  "API_INFO": {
+    "API_ID": "18028250",
+    "API_KEY": "svACxgjjDQtF99253CzX7NtD",
+    "API_SECRET_KEY": "XGQR87sQpWP39ZocSAPGXYw6LM8KXhB7"
+  },
+  "REDIS": {
+    "HOST": "mipi",
+    "PORT": 6379
+  }
+}
