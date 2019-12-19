@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+}
+
+.panel{
+  border: 1px solid gray;
+  width: 260px;
+  box-shadow: 1px 1px 6px 2px black;
+  border-radius: 8px;
+}
+
+.header{
+  background-color: orange;
+  padding: 6px 6px;
+  margin: 0px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+textarea{
+  border: 0px;
+  resize: none;
+  text-align: justify;
+}
+
+.footer{
+  padding: 6px 10px;
+  background-color: green;
+  border-radius: 0px 0px 8px 8px;
+  text-align: right;
+}
+
+.leftwords{
+  font-size: 5px;
+  padding: 0px 4px;
+}

@@ -31,9 +31,8 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
 const app = express();
-app.use(morgan('dev'));
 app.use(require('./mware/ipExtractor'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs').use(express.static('public'));
 app.use(bodyParser.json()).use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
@@ -97,4 +96,4 @@ app.get('/history', (req, res) =>{
 });
 
 const port = nconf.get('NODE_APP_PORT');
-app.listen(port, ()=>console.log('sever started at ' + port));
+app.use(morgan('dev')).listen(port, ()=>console.log('sever started at ' + port));
